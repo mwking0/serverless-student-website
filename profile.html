@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        #profileSaved {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div align="center">
+            <h1>Save and View a Student Profile</h1>
+            <form id="profileForm">
+                Student ID:
+                <br>
+                <input type="text" name="studentid" id="studentid">
+                <br> First name:
+                <br>
+                <input type="text" name="firstname" id="fname">
+                <br> Last name:
+                <br>
+                <input type="text" name="lastname" id="lname">
+                <br> Student Age:
+                <br>
+                <input type="text" name="studentage" id="studentage">
+                <br>
+                <br>
+                <input type="submit" id="saveprofile" value="Save Profile">
+                <br>
+                <p id="profileSaved"></p>
+                <br>
+                <input type="button" id="getprofile" value="View all the students Profiles">
+            </form>
+            <div id="showProfile">
+                <table id="studentProfile">
+                    <colgroup>
+                        <col style="width:20%">
+                        <col style="width:20%">
+                        <col style="width:20%">
+                        <col style="width:20%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>First name</th>
+                            <th>Last Name</th>
+                            <th>Student Age</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+</body>
+</html>
