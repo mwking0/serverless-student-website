@@ -1,5 +1,5 @@
 //add your api here below
-var API_ENDPOINT = "https://t8qtljeq4e.execute-api.us-east-1.amazonaws.com/student"
+var API_ENDPOINT = "The API Gateway endpoint"
 //AJAX GET REQUEST
 document.getElementById("saveprofile").onclick = function(){
   var inputData = {
